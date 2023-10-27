@@ -23,7 +23,7 @@
             </div>
             <div class="image">
                 <p1>image</p1>
-                <input type="text">
+                <input id="changeimg"type="text">
                 <button onclick="setImage()">GO</button>
             </div>
         </div>
@@ -48,8 +48,7 @@
             title.innerText = name + "Profile";
         }
         function setImage(){
-            const profileimage = document.getElementById("profileImage");
-            profileimage.style.backgroundImage = "url(https://www.hidogcat.com/wp-content/uploads/2020/07/nana-cat-04.jpg)"
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("changeimg").value + ")";
         }
     </script>
 </body>
