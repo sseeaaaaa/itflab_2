@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITF LAB</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+    <main>
+        <div class="head">
+        <div class="profile" id="profileImage">
+            <div class="notic"></div>
+        </div>
+        </div>
+        <h1><p id="username-ojioijofijdasf">Itsreee Manthawornsiri</p></h1>
+        <div class="input">
+            <div class="username">
+                <div id="username"><p1>User name</p1></div>
+                <input id="profile-link" type="text">
+                <button onclick="setName()">GO</button>
+            
+            </div>
+            <div class="image">
+                <p1>image</p1>
+                <input type="text">
+                <button onclick="setImage()">GO</button>
+            </div>
+        </div>
+        <section class="grid1">
+            <div class="grid a"></div>
+            <div class="grid b"></div>
+            <div class="grid c"></div>
+            <div class="grid d"></div>
+            <div class="grid e"></div>
+            <div class="grid f"></div>
+            <div class="grid g"></div>
+            <div class="grid h"></div>
+            <div class="grid i"></div>
+            <div class="grid aa"></div>
+        </section>
+    </main>
+    <script>
+        function setName(){
+            const nameField = document.getElementById("profile-link")
+            const name = nameField.value;
+            const title = document.getElementById("username-ojioijofijdasf");
+            title.innerText = name + "Profile";
+        }
+        function setImage(){
+            const profileimage = document.getElementById("profileImage");
+            profileimage.style.backgroundImage = "url(https://www.hidogcat.com/wp-content/uploads/2020/07/nana-cat-04.jpg)"
+        }
+    </script>
+</body>
+</html>
